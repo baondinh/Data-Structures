@@ -20,3 +20,8 @@ B-trees excel at storing and retrieving large amounts of data, especially when t
 Optimized for Disks and Large Data:  B-trees are designed to work well with how data is stored on disks (hard drives, SSDs). Reading a large chunk of data from a disk at once is much faster than reading it in small bits. B-trees group data in ways that make these "block reads" very efficient.
 
 Logarithmic Search Time: Thanks to their balanced nature, searching for a value in a B-tree is very fast. In the worst case, you only need to traverse a few levels of the tree to find your data. This is known as "logarithmic time complexity."  In simpler terms, as the size of your data grows, the time to search doesn't increase as drastically.
+
+2-3 Tree: 
+A 2-3 tree is essentially a B-tree of order m = 1. As such, it has at most 2 entries and 3 children and at least 1 entry and 2 children for for internal nodes. 
+Like other B-trees, the 2-3 tree excels at storing and retrieving large amounts of data. 
+It has logarithmic time efficiency since tree traversal is dependant on the height of the true. 
